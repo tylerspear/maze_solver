@@ -1,11 +1,7 @@
-from tkinter import Tk, BOTH, Canvas
+from graphics import Window
 
-class Window:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-        self.__root = Tk()
-        self.__root.title('Maze Solver')
-        self.__canvas = Canvas()
-        self.__canvas.pack()
-        self.__running = False
+def main():
+    win = Window(800, 600)
+    win.wait_for_close()
+
+main()
